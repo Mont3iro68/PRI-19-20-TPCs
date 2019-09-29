@@ -1,0 +1,169 @@
+body {
+    background-color: snow;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h1   {
+    background-color: silver;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: -8px;
+}
+
+h2 {
+    text-indent: 5px;
+    border-radius: 5px;
+    background-color:  rgb(238, 238, 238);
+    padding: 5px;
+    
+}
+
+
+td.index{
+    width: 19.6%;
+    height: 100%;
+    position: fixed;
+}
+
+td.text {
+    width: 80%;
+}
+
+.galaxias td{
+    text-align: center;
+}
+
+table.galaxias tr:hover{
+    border: 1px;
+    background-color: #ddd;
+
+}
+
+
+table.galaxias{
+    width: 100%;
+    margin: 10px;
+}
+.galaxias th{
+    text-align: center;
+    background-color: lightgrey;
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.galaxias tr:nth-child(even) {background-color: #f2f2f2;}
+
+.galaxias img {
+    width: 50%;
+}
+
+.index a{
+    text-decoration: none;
+    color: black;
+    
+}
+.index a:hover{
+    color: rgb(110, 110, 110);
+}
+
+
+
+.index h3 {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: -10px;
+    
+}
+
+h3.subsection {
+    margin-left: 50px;
+}
+
+h3.subsubsection{
+    margin-left: 100px;
+}
+p{
+    overflow: auto;
+    text-align: justify;
+}
+
+p.subsection{
+    overflow: auto;
+    margin-left: 75px;
+}
+
+p.subsubsection{
+    overflow: auto;
+    margin-left: 125px;
+}
+
+figure.left{
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+figure.right{
+    float: right;
+    text-align: center;
+    width: 20%;
+}
+
+.right img{
+    width: 100%;
+}
+
+.left img{
+    width: 100%;
+}
+
+figure.hbf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.hbf img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+figure.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.center img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+figure{
+    border: thin #c0c0c0 solid;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
