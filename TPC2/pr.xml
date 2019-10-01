@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/mont3iro/Documents/Universidade/PLC/PRI/PRI19-20TPCs/TPC2/pr.dtd">
+<pr>
+    <header>
+        <key_name></key_name>
+        <title></title>
+        <begin_date></begin_date>
+        <end_date></end_date>
+        <supervisor href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </header>
+    
+    <team>
+        <element id="A74036" mail="a74036@alunos.uminho.pt">Manuel Monteiro</element>
+    </team>
+    
+    <abstract>
+        <paragraph></paragraph>
+    </abstract>
+    <deliverables>
+        <items href=""></items>
+    </deliverables>
+</pr>
