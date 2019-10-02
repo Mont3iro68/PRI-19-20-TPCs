@@ -6,7 +6,8 @@
 
 (b)Quais os concelhos com arqueossítios registados:
 
-//CONCEL[../TIPO/@ASSUNTO = "arqueossitio"]
+//CONCEL[not(normalize-space(.)=following::CONCEL/normalize-space(data(.)))]
+//CONCEL[not (. = following::CONCEL)]
 
 
 (c)Seleccione as descrições dos arqueossítios do concelho de Montalegre:
