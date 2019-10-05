@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pr SYSTEM "file:/home/mont3iro/Documents/Universidade/PLC/PRI/PRI19-20TPCs/TPC2/pr.dtd">
+<!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
     <header>
-        <key_name></key_name>
-        <title></title>
-        <begin_date></begin_date>
-        <end_date></end_date>
+        <key_name>PRI2019-A74036-TPC2</key_name>
+        <title>TPC 2</title>
+        <begin_date>Setembro 2019</begin_date>
+        <end_date>Outubro 2019</end_date>
         <supervisor href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
     </header>
     
@@ -14,9 +14,22 @@
     </team>
     
     <abstract>
-        <paragraph></paragraph>
+        <paragraph>O DTD (Document Type Definition) é um ficheiro que define a estrutura de um ficheiro XML. 
+            O DTD serve para que grupos independentes possam concordar numa estrutura padrão para troca de informação. 
+            Pode também ser usado por aplicações para verificar a validez de um ficheiro XML.
+        </paragraph>
+        <paragraph>
+            XPATH (XML Path Language) utiliza síntaxe do estilo de "rotas" para identificar e navegar nos nodos de um documento XML.
+            Com mais de 200 funções integradas o XPATH é uma recomendação da W3C.
+        </paragraph>
+        <paragraph> Com este trabalho foi definido um DTD para a criação de um documento XML para servir de "Project Record".
+                    Além disso foi respondida a uma série de questões de consulta em relação a dois ficheiros XML, utilizando a linguagem XPATH. 
+        </paragraph>
     </abstract>
     <deliverables>
-        <items href=""></items>
+        <item href="pr.dtd">pr.dtd</item>
+        <item href="pr.xml">pr.xml</item>
+        <item href="arq.txt">arq.txt</item>
+        <item href="agenda.txt">agenda.txt</item>
     </deliverables>
 </pr>

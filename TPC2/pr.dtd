@@ -23,8 +23,8 @@
 <!ELEMENT paragraph (#PCDATA|itallic|bold)* >
 <!ELEMENT itallic (#PCDATA|bold)* >
 <!ELEMENT bold (#PCDATA|itallic)* >
-<!ELEMENT deliverables (items+) >
-<!ELEMENT items (#PCDATA)>
-<!ATTLIST items
+<!ELEMENT deliverables (item+) >
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
              href CDATA #REQUIRED>
 
