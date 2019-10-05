@@ -19,7 +19,7 @@
             Pode também ser usado por aplicações para verificar a validez de um ficheiro XML.
         </paragraph>
         <paragraph>
-            XPATH (XML Path Language) utiliza síntaxe do estilo de "rotas" para identificar e navegar nos nodos de um documento XML.
+            XPATH (XML Path Language) utiliza sintaxe do estilo de "rotas" para identificar e navegar nos nodos de um documento XML.
             Com mais de 200 funções integradas o XPATH é uma recomendação da W3C.
         </paragraph>
         <paragraph> Com este trabalho foi definido um DTD para a criação de um documento XML para servir de "Project Record".
