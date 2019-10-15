@@ -1,0 +1,42 @@
+body {
+  font-family: "Arial Black", Gadget, sans-serif;
+  background-color: white;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ol li a {
+  color: black;
+}
+
+ol li a:hover {
+  color: rgb(58, 55, 55);
+}
+
+ ul.navbar {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    top: 0;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
+  
+  .navbar li a:hover {
+    background-color: rgb(207, 207, 207);
+  }
