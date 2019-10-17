@@ -50,7 +50,7 @@
                     </xsl:if>
                     
                 </ul>
-                
+                <div class ="content">
                     <h1>
                         <xsl:value-of select="IDENTI"/>
                     </h1>
@@ -94,6 +94,7 @@
                             </td>
                         </tr>
                     </table>
+                </div>
                 </body>
             </html>
         </xsl:result-document>

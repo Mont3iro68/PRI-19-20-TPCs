@@ -3,6 +3,7 @@
     version="2.0">
     <xsl:template match="/">
         <html>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
             <head>
                 <title>
                      Project Record
@@ -10,14 +11,15 @@
                 <meta charset="UTF-8"></meta>
             </head>
             <body>
-                <h1 style="text-align:center">Project Record</h1>
+                
+                <h1>Project Record</h1>
                 <xsl:apply-templates/>
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="meta">
-            <table style = "border: 2px black solid; width: 100%" >
+            <table>
                 <tr>
                     <td><b>KEY NAME:</b><xsl:value-of select="keyname"/></td>
                     <td><b>BEGIN DATE:</b><xsl:value-of select="bdate"/></td>
@@ -34,7 +36,7 @@
     </xsl:template>
     <xsl:template match="workteam">
         <br/>
-        <div style="border: 2px solid black">
+        <div>
             
         <h3>WorkTeam:</h3>
          <ol>
@@ -45,11 +47,11 @@
     </xsl:template>
     
     <xsl:template match="member">
-        <li><xsl:value-of select="identifier"/> - <xsl:value-of select="name"/> - <a href="mailto:{email}"><xsl:value-of select="name"/></a> <img path="{photo/@path}"/> </li>
+        <li><xsl:value-of select="identifier"/> - <xsl:value-of select="name"/> - <a href="mailto:{email}"><xsl:value-of select="email"/></a> <img path="{photo/@path}"/> </li>
     </xsl:template>
     <xsl:template match="abstract">
         <br/>
-        <div style="border: 2px black solid">
+        <div>
         <h3>ABSTRACT:</h3>  
            <xsl:apply-templates/>
         </div>
@@ -65,7 +67,7 @@
     
     <xsl:template match="deliverables">
         <br/>
-        <div style="border: 2px black solid">
+        <div>
         <h3>Deliverables:</h3>
         <ul>
             <xsl:apply-templates/>

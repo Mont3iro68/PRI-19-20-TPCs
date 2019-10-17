@@ -22,12 +22,16 @@
         </member>
     </workteam>
     <abstract>
-        <p></p>
+        <p>Este trabalho tinha como objetivo a utilização da linguagem <b>XSL</b> <i>(eXtensible Stylesheet Language)</i>. O <b>XSL</b> é uma linguagem de estilo que define como
+            devem ser apresentados os ficheiros <b>XML</b> de um tipo.</p>
+        <p>É utilizado o <b>XSLT</b> para fazer transformações nos ficheiros, para por exemplo <b>HTML</b>.</p>
+        <p>Neste trabalho foi desenvolvido um ficheiro <b>XSL</b> para a produção deste project record como também outro ficheiro do mesmo tipo para a produção de um <i>website</i>.</p>
     </abstract>
     <deliverables>
         <deliverable path="pr.xml">pr.xml</deliverable>
         <deliverable path="pr.xsl">pr.xsl</deliverable>
         <deliverable path="arq.xml">arq.xml</deliverable>
         <deliverable path="arq.xsl">arq.xsl</deliverable>
+        <deliverable path="website/index.html">Website Arqueositeos</deliverable>
     </deliverables>
 </pr>
