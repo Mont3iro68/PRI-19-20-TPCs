@@ -2,7 +2,7 @@
 Manuel João Monteiro
 A74036
 
-##TPC
+## TPC
 
 [TPC1](./TPC1/)
 
