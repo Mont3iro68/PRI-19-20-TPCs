@@ -89,7 +89,7 @@
                             <th>Descrição: </th>
                             <td>
                                 <p>
-                                    <xsl:apply-templates select="QUADRO|DESARQ|LIGA"/>
+                                    <xsl:apply-templates/>
                                 </p>
                             </td>
                         </tr>
@@ -102,7 +102,7 @@
     
     <xsl:template match="LIGA">
         
-        <a href="https://www.google.com/search?q={.}"><xsl:value-of select="."/></a>
+        <a target="blank" href="https://www.google.com/search?q={.}"><xsl:value-of select="."/></a>
     </xsl:template>
 </xsl:stylesheet>
 
