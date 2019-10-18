@@ -7,12 +7,12 @@
                 <link rel="stylesheet" type="text/css" href="style.css"/>
                 <head>
                     <title>
-                    Arqueositeos
+                    Arqueossiteos
                     </title>
                     <meta charset="UTF-8"></meta>
                 </head>
                 <body>
-                    <h1>Lista de Arqueositeos</h1>
+                    <h1>Lista de Arqueossiteos</h1>
                     <ol>
                         <xsl:apply-templates/>
                     </ol>
@@ -89,7 +89,7 @@
                             <th>Descrição: </th>
                             <td>
                                 <p>
-                                    <xsl:apply-templates select="QUADRO|DESARQ"/>
+                                    <xsl:apply-templates select="QUADRO|DESARQ|LIGA"/>
                                 </p>
                             </td>
                         </tr>
@@ -98,6 +98,11 @@
                 </body>
             </html>
         </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="LIGA">
+        
+        <a href="https://www.google.com/search?q={.}"><xsl:value-of select="."/></a>
     </xsl:template>
 </xsl:stylesheet>
 

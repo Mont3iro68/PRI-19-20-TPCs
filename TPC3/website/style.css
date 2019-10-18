@@ -3,6 +3,10 @@ body {
   background-color: #2B3137;
   color: #B7BDC9;
 }
+table a{
+    text-decoration: underline;
+    color: white;
+}
 
 li a {
   text-decoration: none;

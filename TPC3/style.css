@@ -17,3 +17,20 @@ table{
     border: 2px black solid; 
     width: 100%;
 }
+
+img
+{
+    height: 130px;
+    margin: 30px;
+    vertical-align: middle;
+}
+
+div ul li
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: rgb(19, 53, 83);
+}

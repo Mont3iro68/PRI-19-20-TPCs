@@ -18,8 +18,9 @@
             <identifier>A74036</identifier>
             <name>Manuel Monteiro</name>
             <email>a74036@alunos.uminho.pt</email>
-            <photo path=""/>
+            <photo path="photo.png"/>
         </member>
+        
     </workteam>
     <abstract>
         <p>Este trabalho tinha como objetivo a utilização da linguagem <b>XSL</b> <i>(eXtensible Stylesheet Language)</i>. O <b>XSL</b> é uma linguagem de estilo que define como
@@ -32,6 +33,6 @@
         <deliverable path="pr.xsl">pr.xsl</deliverable>
         <deliverable path="arq.xml">arq.xml</deliverable>
         <deliverable path="arq.xsl">arq.xsl</deliverable>
-        <deliverable path="website/index.html">Website Arqueositeos</deliverable>
+        <deliverable path="website/index.html">Website Arqueossiteos</deliverable>
     </deliverables>
 </pr>

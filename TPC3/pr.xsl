@@ -47,7 +47,7 @@
     </xsl:template>
     
     <xsl:template match="member">
-        <li><xsl:value-of select="identifier"/> - <xsl:value-of select="name"/> - <a href="mailto:{email}"><xsl:value-of select="email"/></a> <img path="{photo/@path}"/> </li>
+        <li><span><xsl:value-of select="identifier"/> - <xsl:value-of select="name"/> - <a href="mailto:{email}"><xsl:value-of select="email"/></a></span> <img src="{photo/@path}"/></li>
     </xsl:template>
     <xsl:template match="abstract">
         <br/>
