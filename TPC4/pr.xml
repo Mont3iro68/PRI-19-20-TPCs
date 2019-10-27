@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/mont3iro/Documents/Universidade/PLC/PRI/PRI19-20TPCs/TPC3/pr_oficial.dtd">
+<pr>
+    <meta>
+        <keyname>PRI2019-A74036-TPC4</keyname>
+        <title>TPC4</title>
+        <subtitle>NODE.JS</subtitle>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74036</identifier>
+            <name>Manuel Monteiro</name>
+            <email>a74036@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+        
+    </workteam>
+    <abstract>
+        <p>O <b>Node.js</b> é um interpertador de <b>JavaScript</b> assíncrono com código <i>Open-Source</i>.</p>
+        <p>É utilizado para correr <i>Scripts</i> do lado do servidor, permitindo a produção de páginas web dinâmicas.</p>
+        <p>Neste trabalho foi desenvolvido um <xref url="servidor.js">servidor</xref> em <b>Node.js</b> capaz de responder
+        a pedidos <b>HTTP</b> do tipo <b>GET</b> para a obtenção de informação sobre uma música através do ficheiro <b>XML</b>
+            da mesma.
+        </p>
+        <p>Para além disso foi criado um <xref url="doc2html.xsl">ficheiro</xref> <b>XSL</b> transformando os documentos <b>XML</b>
+            para serem apresentados em <b>HTML</b>. Este ficheiro é depois enviado pelo servidor, para que seja carregada uma página
+            contendo a informação presente no documento <b>XML</b>
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.xml">pr.xml</deliverable>
+        <deliverable path="pr.xsl">pr.xsl</deliverable>
+        <deliverable path="doc2html.xsl">doc2html.xsl</deliverable>
+        <deliverable path="servidor.js">servidor.js</deliverable>
+    </deliverables>
+</pr>
