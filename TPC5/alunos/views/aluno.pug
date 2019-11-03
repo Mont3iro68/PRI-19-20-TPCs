@@ -1,0 +1,46 @@
+extends layout
+block content
+  .w3-bar.w3-dark-grey
+
+      a.w3-bar-item.w3-btn.w3-text-orange.w3-white(style="margin-left: 30px;", href='/alunos') VOLTAR
+      span.w3-xlarge(style='margin-left: 30%')= title
+  .w3-cell-row
+    .w3-container.w3-card.w3-padding-32.w3-cell(style="width: 40%")
+       table
+        tr
+          th Nome:
+            td= aluno.nome
+          
+          th(style="padding-left: 50px") Curso:
+            td= aluno.curso
+
+          th
+            img(src="/images/avatar.png" style="padding-left: 50px")
+        
+          
+
+    .w3-container.w3-card.w3-cell.w3-padding-32(style="width: 60%")
+      table.w3-table
+        tr.w3-dark-grey
+          th Indicador
+          th Nota
+          th.w3-center Operações
+        each n in aluno.notas
+          tr 
+            td= n.indicador
+            td= n.nota
+            td.w3-center
+              button.w3-button.w3-round.w3-blue-grey(onclick="apagaNota('" + aluno.id + "','" + n.indicador + "')") Remover
+  .w3-card(style="width: 40%")
+    header.w3-container
+      h3 Inserir Nota
+    .w3-container
+      form.w3-container(action='/alunos/' + aluno.id + '/notas'  method='POST')
+        label
+          b Indicador
+        input.w3-input.w3-border.w3-light-grey(type='text' name='indicador')
+        label 
+          b Nota
+        input.w3-input.w3-border.w3-light-grey(type='text' name='nota')
+        br
+        input.w3-btn.w3-blue-grey(type='submit' value='Enviar' style="margin-bottom: 20px")

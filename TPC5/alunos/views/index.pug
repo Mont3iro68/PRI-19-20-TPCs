@@ -1,0 +1,35 @@
+extends layout
+block content
+  .w3-container.w3-dark-grey
+    header.w3-container 
+      h1= title
+  br
+  .w3-container
+    header.w3-container
+      h3 Novo Aluno
+    .w3-container
+      form.w3-container(action='/alunos' method='POST')
+        label
+          b Nome
+        input.w3-input.w3-border.w3-light-grey(type='text' name='nome')
+        label 
+          b Curso
+        input.w3-input.w3-border.w3-light-grey(type='text' name='curso')
+        input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+  hr
+  .w3-container
+    table.w3-table
+      tr.w3-dark-grey
+        th Aluno
+        th ID
+        th Curso
+        th.w3-center Operações
+      each a in alunos
+        tr 
+          td= a.nome
+          td= a.id
+          td= a.curso
+          td.w3-center
+            button.w3-button.w3-round.w3-blue-grey(onclick="apagaAluno('" + a.id + "')" style="margin-right: 5%") Remover
+
+            button.w3-button.w3-round.w3-blue-grey(onclick="alunoNotas('"+ a.id + "')" style="margin-left: 5%") Ver Notas
