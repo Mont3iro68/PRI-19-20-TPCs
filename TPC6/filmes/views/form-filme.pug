@@ -1,0 +1,35 @@
+extends layout
+
+block content  
+  .w3-card
+    a(href="/") Voltar
+    .w3-container.w3-dark-grey
+      h1 Inserção de um Filme
+    
+
+    form.w3-container.w3-margin-top(id='form')
+        
+        label 
+          b Título:
+        input.w3-input.w3-margin-bottom(type="text" name="title")
+        
+        label
+          b Ano:
+        input.w3-input(type="text" name="year")
+
+        .w3-card.w3-section
+          .w3-container
+            h3 Elenco
+            button.w3-button.w3-section.w3-teal(id="add") Adicionar
+          
+          .w3-row.w3-container(id='cast')
+        
+        .w3-card.w3-section
+          .w3-container
+            h3 Generos
+            button.w3-button.w3-section.w3-teal(id="addg") Adicionar
+          
+          .w3-row.w3-container(id='genres')
+
+            
+        button.w3-btn.w3-section.w3-light-grey(id='send') Enviar
