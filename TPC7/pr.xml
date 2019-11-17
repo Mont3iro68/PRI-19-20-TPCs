@@ -2,9 +2,9 @@
 <!DOCTYPE pr SYSTEM "file:/home/mont3iro/Documents/Universidade/PLC/PRI/PRI19-20TPCs/TPC3/pr_oficial.dtd">
 <pr>
     <meta>
-        <keyname>PRI2019-A74036-TPC6</keyname>
-        <title>TPC5</title>
-        <subtitle>EXPRESS.JS + MONGODB</subtitle>
+        <keyname>PRI2019-A74036-TPC7</keyname>
+        <title>TPC7</title>
+        <subtitle>EXPRESS + API DADOS</subtitle>
         <bdate>Novembro 2019</bdate>
         <edate>Novembro 2019</edate>
         <supervisor>
@@ -24,14 +24,17 @@
     </workteam>
     <abstract>
         <p>
-            Neste trabalho foi utilizada uma <i>framework</i> para o <b>Node.js</b> o <b>Express.js</b>. Foi utilizada também
-            uma biblioteca <b>Axios</b>
+            Neste trabalho foi utilizada uma <i>framework</i> para o <b>Node.js</b> o <b>Express.js</b>.
         </p>
-        <p> Foi-nos pedido a criação de um <i>Website</i> relativo a um arquivo de alunos e as suas notas.</p>
+        <p>
+            Foi utilizado o <b>mongoDB</b> para fazer a API de dados.  
+        </p>
+        <p> Os dados são relativos a um <i>dataset</i> com informação acerca de obras músicais.
+        </p>
     </abstract>
     <deliverables>
         <deliverable path="pr.xml">pr.xml</deliverable>
         <deliverable path="pr.xsl">pr.xsl</deliverable>
-        <deliverable path="filmes/">servidor</deliverable>
+        <deliverable path="obras/">servidor</deliverable>
     </deliverables>
 </pr>
