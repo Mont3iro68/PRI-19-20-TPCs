@@ -1,0 +1,25 @@
+Quantos Tipologias estão catalogadas?
+    Seguindo a rota: GET http://clav-api.dglab.gov.pt/api/tipologias 
+    obtem-se a lista das topologias, dando num total 76 entradas, ou seja 76 topologias
+
+Quantos Entidades pertencem à Tipologia tip_FSS?
+    Seguindo a rota: GET http://clav-api.dglab.gov.pt/api/tipologias/{id}/elementos em que
+    id = tip_FSS obtemos os elementos pertencentes a esse tipo que são 5 {GNR,PSP,PJ,SEF,SIS}
+
+Em que processos a tipologia tip_FA participa como Comunicador?
+    Seguindo a rota: GET http://clav-api.dglab.gov.pt/api/tipologias/{id}/intervencao/participante em que id=tip_FA obtemos
+    a lista dos processos em que essa tipologia intervem como participante, depois foi só encontrar em que processos
+    tem Participação de comunicador, que são 4: 
+    {Concessão de pensões de preço de sangue,
+    Concessão de pensões por serviços excecionais e relevantes prestados ao país,
+    Concessão de pensões de ex-prisioneiro de guerra,
+    Concessão de pensões por condecorações} 
+
+A que tipologias pertence a entidade ent_SEF?
+    Seguindo a rota: GET http://clav-api.dglab.gov.pt/api/entidades/{id}/tipologias com id= ent_SEF obtemos
+    as tipologias a que uma entidade pertence, obtendo duas entradas:{Administração Publica,Forças e serviços de segurança}
+
+Comandos npm/npx:
+    npx express-generator --view=pug ex2
+    npm i
+    npm i axios --save

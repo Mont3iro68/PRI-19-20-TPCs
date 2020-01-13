@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    .w3-card-2
+        a(href="/") Voltar
+        table.w3-table-all
+            tr
+                th Designação:
+                td= tip.designacao
+
+                th Sigla:
+                td= tip.sigla
+
+                th Estado:
+                td= tip.estado
+
+    .w3-container
+        h2 Entidades:
+
+
+        table.w3-table-all
+
+            tr.w3-indigo
+                th Sigla: 
+                th Internacional:
+                th Designacao
+            each e in entidades
+                tr
+                    td= e.sigla 
+                    td= e.internacional
+                    td= e.designacao
+                        a(href="/entidades/"+e.id)= e.designacao
+
+    .w3-card-4
+    h2.w3-center Processos em que é participante
+    table.w3-table-all
+        tr
+            th.w3-center Tipo
+            th.w3-center Código
+            th.w3-center Título
+            th.w3-center ID
+        each p in part
+            tr
+                td.w3-center= p.tipoPar
+                td.w3-center= p.codigo
+                td.w3-center= p.titulo
+                td.w3-center= p.id

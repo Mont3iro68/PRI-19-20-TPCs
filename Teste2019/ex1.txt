@@ -1,0 +1,10 @@
+
+Comandos Mongo:
+    mongod --dbpath <pasta de dados do mongo> (Inicialização do mongo)
+    mongoimport --db Teste2019 --collection publicacoes --file jcrpubs.json --jsonArray (Import dos dados para o mongo)
+
+Comandos npm/npx:
+    npx express-generator --view=pug ex1
+    npm i
+    npm i mongoose --save
+    npm start (porta 8888)
